@@ -1,0 +1,288 @@
+body{
+	font-size: 16px;
+	font-family: "微软雅黑","苹方","sans-serif"
+}
+header{
+	width: 100%;
+	height: 1.77rem;
+	/* background: yellow; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.head-top{
+	width: 100%;
+	height: .88rem;
+	background: #c93a3a;
+	padding: 0 .24rem;	
+}
+.head-top h1{
+	font-size: 0.37rem;
+	line-height: .88rem;
+	color: #fff;
+	font-weight: bolder;
+	float: left;
+}
+.head-search{
+	width: 5.02rem;
+	height: .57rem;
+	background: #fff;
+	float: right;
+	margin-top: .155rem;
+}
+.head-search input{
+	width: 100%;
+	height: 100%;
+	padding-left: .68rem;
+}
+nav{
+	width: 100%;
+	height: .89rem;
+	background: #fff;
+	padding: 0 .24rem;
+	/* 设置弹性布局 */
+	display: flex;
+	/* 设置内容换行 */
+	flex-wrap: wrap;
+	/* 设置水平方向对齐方式 */
+	justify-content: space-between ;
+	/* 设置单行垂直对齐方式 */
+	align-items: center;
+}
+nav a{
+	color: #000;
+	font-size: .34rem;
+}
+
+.nav-active{
+	color: #d43d3d;
+	font-size: .40rem;
+}
+.nav-more{
+	display: block;
+	width: .53rem;
+	height: 100%;
+	text-align: right;
+	box-shadow: -6px 0 10px rgba(0, 0, 0, .1);
+	line-height: .89rem;
+	font-size: .50rem;
+}
+.content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 1.77rem;
+	bottom: .98rem;
+	overflow-y: scroll;
+	/* background: skyblue; */
+}
+.banner{
+	width: 100%;
+	height: 3.1rem;
+	/* background: yellow; */
+}
+.banner-img,.banner-item{
+	width: 100%;
+	height: 100%;
+
+}
+.category{
+	width: 100%;
+	height: 1.54rem;
+	background: #fff;
+	padding: 0 .24rem;
+	/* 设置弹性布局 */
+	display: flex;
+	/* 设置内容换行 */
+	flex-wrap: wrap;
+	/* 设置水平方向对齐方式 */
+	justify-content: space-between ;
+	/* 设置单行垂直对齐方式 */
+	align-items: center;
+}
+.category li{
+	width: 1.2rem;
+	height: 1.25rem;
+	/* background: red; */
+	/* 设置弹性布局 */
+	display: flex;
+	/* 设置内容换行 */
+	flex-wrap: wrap;
+	/* 设置水平方向对齐方式 */
+	justify-content: center ;
+	/* 设置单行垂直对齐方式 */
+	align-content: space-between;
+
+}
+
+.category-box{
+	width: .72rem;
+	height: .72rem;
+	background: #fff;
+	border-radius: 50%;
+	
+}
+.category li :nth-child(1).category-box{
+	box-shadow: 0 0 .2rem rgba(255, 144, 144, .5);
+}
+.category li :nth-child(2).category-box{
+	box-shadow: 0 0 .2rem rgba(162, 157, 255, .5);
+}
+.category li :nth-child(3).category-box{
+	box-shadow: 0 0 .2rem rgba(255, 100, 100, .5);
+}
+.category li :nth-child(4).category-box{
+	box-shadow: 0 0 .2rem rgba(255, 164, 46, .5);
+}
+
+.category-wenzi{
+	font-size: .28rem;
+	color: #575757;
+	font-weight: 700;
+}
+.notice{
+	width: 100%;
+	height: 2.48rem;
+	/* background: goldenrod; */
+	border-top: .02rem solid #eee;
+	padding: .29rem .24rem 0;
+
+}
+.notice-top{
+	width: 100%;
+	height: 1.46rem;
+	/* background: red; */
+}
+.notice-top p{
+	height: 100%;
+	width: 4.36rem;
+	font-size: .38rem;
+	float: left;
+}
+.notice-img{
+	width: 2.24rem;
+	height: 100%;
+	float: right;
+	background: black;
+}
+.notice-bottom{
+	width: 100%;
+	overflow: hidden;
+	/* background: pink; */
+	margin-top: .1rem;
+}
+.name,.pinglun,.time{
+	float: left;
+	margin-right: .15rem;
+	font-size: .24rem;
+	color: #a3a3a3;
+}
+.end{
+	float: right;
+}
+.notice1{
+	width: 100%;
+	height: 3.56rem;
+	/* background: yellow; */
+	border-top: .02rem solid #eee;
+	padding: .29rem .24rem 0;
+}
+.notice1-top p{
+	height: 100%;
+	width: 100%;
+	font-size: .38rem;
+}
+.notice1-medium{
+	width: 100%;
+	height: 1.47rem;
+	/* background: skyblue; */
+	float: left;
+	display: flex;
+	/* 设置水平方向对齐方式 */
+	justify-content: space-between ;
+	/* 设置单行垂直对齐方式 */
+	align-content: center;
+	margin-bottom: .1rem;
+}
+.medium-img{
+	width: 2.24rem;
+	height: 1.47rem;
+	/* background: black; */
+	box-shadow: 0px 0 20px rgba(0, 0, 0, .1);
+
+}
+.notice1-bottom{
+	width: 100%;
+	overflow: hidden;
+	/* background: pink; */
+}
+
+footer{
+	width: 100%;
+	height: .98rem;
+	background: #fff;
+	padding: 0 .5rem;
+	position: fixed;
+    bottom: 0;
+    left: 0;
+	z-index: 999;
+}
+.foot-box{
+	width: 100%;
+	height: .98rem;
+	/* background: red; */
+	/* 设置弹性布局 */
+	display: flex;
+	/* 设置内容换行 */
+	flex-wrap: wrap;
+	/* 设置水平方向对齐方式 */
+	justify-content: space-between ;
+	/* 设置单行垂直对齐方式 */
+	align-items: center;
+}
+.foot-box li{
+	width: .96rem;
+	height: .8rem;
+	float: left;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.foot-gezi{
+	width: .96rem;
+    height: .45rem;
+    /* background: black; */
+	padding: 0 .23rem;
+}
+.foot-gezi img{
+	width: .5rem;
+    height: .42rem;
+}
+.foot-wenzi1{
+	font-size: .2rem;
+    color: #f85959;
+    font-weight: 600;
+}
+.foot-wenzi{
+	font-size: .2rem;
+    color: rgba(0, 0, 0, .4);
+    font-weight: 600;
+}
+
+
+.more{
+	width: .87rem;
+	height: .87rem;
+
+}
+.foot-box li:nth-child(3){
+	
+	height: .98rem;
+	float: left;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
