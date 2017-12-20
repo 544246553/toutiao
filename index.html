@@ -7,6 +7,7 @@
 	<script src="js/rem.js"></script>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 
 </head>
 <body>
@@ -20,10 +21,10 @@
 		</section>
 
 		<nav>
-			<a href="">关注</a>
-			<a href="">推荐</a>
+			<a href="weather.html">天气</a>
+			<a href="tuijian.html">推荐</a>
 			<a href="">热点</a>
-			<a href="" class="nav-active">太原</a>
+			<a href="index.html" class="nav-active">太原</a>
 			<a href="">视频</a>
 			<a href="">社会</a>
 			<a href="" class="nav-more">+</a>
@@ -36,11 +37,15 @@
 
 	<!-- 内容开始 -->
 	<div class="content">
-		<section class="banner">
-			<div class="banner-img">
-				<div class="banner-item">
+		<section class="banner swiper-container">
+			<div class="banner-img swiper-wrapper">
+				<div class="banner-item swiper-slide">
 					<img src="img/banner.jpg" alt="">
 				</div>
+				<div class="banner-item swiper-slide">
+					<img src="img/banner.jpg" alt="">
+				</div>
+
 			</div>
 		</section>
 
@@ -130,8 +135,7 @@
 				<span class="end">X</span>
 			</div>
 		</section>
-
-		
+	
 		<section class="notice1">
 			<div class="notice1-top">
 				<p>油性皮肤怎么祛痘最新祛痘单品让你秒变美少女！</p>
@@ -154,11 +158,6 @@
 				<span class="end">X</span>
 			</div>
 		</section>
-
-		
-		
-		
-
 	</div>
 	<!-- 内容结束 -->
 
@@ -193,3 +192,17 @@
 	<!-- 脚部结束 -->
 </body>
 </html>
+<script src="js/jquery.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+ 	
+ 	autoplay:true,
+    
+    // 如果需要分页器
+    
+    pagination: '.swiper-pagination',
+  
+  })        
+  </script>
